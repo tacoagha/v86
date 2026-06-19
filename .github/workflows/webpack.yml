@@ -13,7 +13,8 @@ jobs:
 
       - name: Install deps
         run: npm install
-
+      - name: Install Rust WASM target
+        run: rustup target add wasm32-unknown-unknown
       - name: Build
         run: make
 
